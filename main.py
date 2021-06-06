@@ -39,11 +39,8 @@ class Application(tk.Frame):
         # アプリ画面(Window)の位置、大きさを設定する。
         self.master.geometry("300x200+120+0")
 
-        # while True:
-        #     self.getAfterSample()
         # id = self.getAfterSample()
         # self.removeAfterSample(id)
-
         self.confirmTimeVsAfter()
 
 # Tkinter初学者参考 : https://docs.python.org/ja/3/library/tkinter.html#a-simple-hello-world-program
