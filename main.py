@@ -25,7 +25,9 @@ class Application(tk.Frame):
 
     # time.sleepとafter関数を比較する関数
     def confirmTimeVsAfter(self):
+        # Buttonについて : https://kuroro.blog/python/oFju6EngDtcYtIiMIDf1/
         button = tk.Button(command=self.getHello)
+        # packについて : https://kuroro.blog/python/UuvLfIBIEaw98BzBZ3FJ/
         button.pack()
 
     # after関数をキャンセルする関数
@@ -37,6 +39,7 @@ class Application(tk.Frame):
         # Windowの初期設定を行う。
         super().__init__(master)
         # アプリ画面(Window)の位置、大きさを設定する。
+        # geometryについて : https://kuroro.blog/python/rozH3S2CYE0a0nB3s2QL/
         self.master.geometry("300x200+120+0")
 
         # id = self.getAfterSample()
@@ -48,4 +51,5 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = Application(master=root)
     # Windowをループさせて、継続的にWindow表示させる。
+    # mainloopについて : https://kuroro.blog/python/DmJdUb50oAhmBteRa4fi/
     app.mainloop()
